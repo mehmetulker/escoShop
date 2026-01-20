@@ -6,8 +6,9 @@
     gap: 24px;
     /* sm */
     @media (max-width: 576px) {
-      padding: 24px 15px 24px 16px;
+      padding: 40px 0px;
       grid-template-columns: 1fr;
+      justify-items: center;
     }
 
     .category-text {
@@ -34,8 +35,8 @@
         object-fit: cover;
 
         @media (max-width: 576px) {
-          width: 375px;
-          height: auto;
+          width: 344px;
+          height: 240px;
           object-fit: cover;
         }
       }
