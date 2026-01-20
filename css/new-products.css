@@ -137,5 +137,23 @@
         }
       }
     }
+
+    .new-products-products {
+      gap: 24px;
+
+      .new-products-item {
+        min-width: 148px;
+
+        .new-products-item-description {
+          font-size: 14px;
+          line-height: 143%;
+        }
+
+        .product-price {
+          font-size: 12px;
+          line-height: 133%;
+        }
+      }
+    }
   }
 }
