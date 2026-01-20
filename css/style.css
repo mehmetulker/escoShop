@@ -3,6 +3,7 @@
 @import url("./hero.css");
 @import url("./category.css");
 @import url("./products.css");
+@import url("./new-products.css");
 
 .container {
   width: 100%;
