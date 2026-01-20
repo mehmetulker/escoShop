@@ -1,6 +1,7 @@
 @import url("./_base.css");
 @import url("./header.css");
 @import url("./hero.css");
+@import url("./category.css");
 
 .container {
   width: 100%;
