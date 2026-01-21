@@ -4,6 +4,7 @@
 @import url("./category.css");
 @import url("./products.css");
 @import url("./new-products.css");
+@import url("./brand-message.css");
 
 .container {
   width: 100%;
