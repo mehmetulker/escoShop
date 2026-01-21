@@ -1,0 +1,110 @@
+@layer components {
+  .why-choose-us {
+    display: flex;
+    flex-direction: column;
+    padding: 160px 60px;
+    gap: 40px;
+
+    @media (max-width: 576px) {
+      padding: 80px 15px;
+      gap: 24px;
+    }
+
+    .why-choose-us-text {
+      position: relative;
+
+      & h2 {
+        font-weight: 700;
+        font-size: 48px;
+        text-align: center;
+        color: var(--color-primary);
+        position: relative;
+        z-index: 2;
+
+        @media (max-width: 576px) {
+          font-weight: 400;
+          font-size: 20px;
+          text-align: center;
+          color: var(--color-grey-600);
+        }
+      }
+      & svg {
+        position: absolute;
+        top: 15%;
+        left: 32%;
+        transform: translate(-50%, -50%);
+        z-index: 1;
+        opacity: 0.9;
+
+        @media (max-width: 576px) {
+          width: 64px;
+          height: 22px;
+          left: 20%;
+        }
+      }
+    }
+
+    .why-choose-us-products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 280px));
+      justify-content: center;
+      gap: 24px;
+
+      @media (max-width: 576px) {
+        grid-template-columns: repeat(2, 164px);
+        gap: 16px;
+      }
+
+      .why-choose-us-item {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        @media (max-width: 576px) {
+        }
+
+        svg {
+          border-radius: 8px;
+          object-fit: cover;
+
+          &.icon {
+            @media (max-width: 576px) {
+              width: 32px;
+              height: 32px;
+              path {
+                fill: var(--color-primary) !important;
+              }
+            }
+          }
+        }
+
+        .why-choose-us-item-content {
+          gap: 4px;
+
+          .why-choose-us-item-title {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 140%;
+            color: var(--color-grey-600);
+
+            @media (max-width: 576px) {
+              font-size: 14px;
+              line-height: 143%;
+            }
+          }
+
+          .why-choose-us-item-description {
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 140%;
+            color: var(--color-grey-500);
+            @media (max-width: 576px) {
+              font-size: 14px;
+              line-height: 143%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
