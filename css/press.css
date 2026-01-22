@@ -4,6 +4,12 @@
     background-color: var(--color-primary);
     padding: 0px 60px 0px 0px;
 
+    @media (max-width: 576px) {  
+    padding-right: 0;
+    overflow: hidden; 
+}
+
+
 
     .press-grid {
       display: grid;
@@ -52,7 +58,9 @@
 
 
       .press-right {
-        position: relative;
+        position: relative;        
+        box-sizing: border-box;
+        overflow: hidden; 
         padding: 83px 148px 83px 80px;
         background-color: var(--green);
         box-sizing: border-box;
@@ -166,13 +174,11 @@
             width: 90px;
             height: 90px;
             background-image: url("../assets/images/press-vector3.svg");
-
              @media (max-width: 576px) {
-              
-              top: 0;
-              left: 315px;
-              width: 112px;
-              height: 66px;
+             top: 0;
+              left: 320px;
+              width: 122px;
+              height: 76px;
                  
                      
             background-image: url("../assets/images/press-vector3.svg"); 
