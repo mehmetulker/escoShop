@@ -1,0 +1,120 @@
+@layer components {
+  .popup {
+    display: none;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 16px;
+    padding: 0px 24px 0px 0px;
+    width: 872px;
+    height: 540px;
+    gap: 16px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background: white;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+
+      @media (max-width: 576px) {
+      padding: 24px 16px;
+       width: 344px;
+       height: auto;
+      background-image: url("../assets/images/mobil-pop-up.png");
+      background-size: cover;
+      background-position: center center;
+      background-repeat: no-repeat;
+      }
+
+  }
+
+  .popup.active {
+    display: flex;
+  }
+
+
+
+
+  .close-btn {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: var(--color-grey-600);
+    border-radius: 40px;
+  }
+
+  .popup-left {
+    display: flex 1;
+       @media (max-width: 576px) {
+       display: none;
+      }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 16px 0px 0px 16px;
+    }
+  }
+  .popup-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    gap: 16px;
+   
+    } 
+
+
+  .shop-btn {
+  position: relative;
+  display: inline-block;
+  padding: 12px 24px;
+  font-size: 20px;
+  line-height: 140%; 
+  font-weight: 600;
+  color: var(--color-primary);
+  text-decoration: none;
+  overflow: hidden;
+
+      @media (max-width: 576px) {    
+      font-size: 14px;
+      line-height: 143%;
+      }   
+
+  .shape {
+    position: absolute;
+    left: 0;
+    top: 45%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background: var(--color-secondary);
+    border-radius: 40px;
+    transition: all 0.4s ease;
+    z-index: -1;
+  }
+
+  &:hover {
+    color: #fff;
+
+    .shape {
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      transform: none;
+      border-radius: 40px;
+    }
+  }
+}
+
+
+}}

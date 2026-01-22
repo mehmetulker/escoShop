@@ -50,3 +50,21 @@ sliders.addEventListener("mousemove", (e) => {
   const walk = (x - startX) * 1.2; // hız
   sliders.scrollLeft = scrollLeft - walk;
 });
+
+
+
+  document.addEventListener("DOMContentLoaded", () => {
+    const popup = document.getElementById("popup");
+    const closeBtn = document.getElementById("closeBtn");
+
+    // 10 saniye sonra aç
+    setTimeout(() => {
+      popup.classList.add("active");
+    }, 2000);
+
+    // çarpıya basınca kapat
+    closeBtn.addEventListener("click", () => {
+      popup.classList.remove("active");
+    });
+  });
+
