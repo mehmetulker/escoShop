@@ -1,10 +1,15 @@
 @layer components {
   .category {
-    padding: 80px 60px;
+    padding: 80px 00px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 24px;
-    /* sm */
+    box-sizing: border-box;
+
+    @media (max-width: 1024px) {
+    padding-left: 20px;;
+    }
+   
     @media (max-width: 576px) {
       padding: 40px 0px;
       grid-template-columns: 1fr;
