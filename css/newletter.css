@@ -30,8 +30,8 @@
 
       @media (max-width: 576px) {
         border-radius: 24px;
-        padding: 12px;
-        width: 344px;
+        padding: 24px;
+        max-width: 344px;
         height: 184px;
         gap: 16px;
         -webkit-border-radius: 24px;
